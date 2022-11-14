@@ -8,7 +8,11 @@ function BoxList() {
     console.log(state);
     return (
         <div className="BoxList">
-            <Box />
+            <Box 
+                boxHeight="100px" 
+                boxWidth="200px" 
+                boxColor="red" 
+                />
             <NewBoxForm />
         </div>
     );
