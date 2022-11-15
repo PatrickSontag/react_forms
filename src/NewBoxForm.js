@@ -1,24 +1,31 @@
 import './NewBoxForm.css';
 import { useState } from 'react';
 
-function NewBoxForm() {
+function NewBoxForm({ addBox }) {
 
-  const [formData, setFormData] = useState({
+  const INITIAL_STATE = {
     height: "",
     width: "",
     color: ""
-  });
+  };
 
-  const handleChange = evt => {
-    const { name, value } = evt.target;
-    setFormData(fData => ({
-      ...fData,
+  const [formData, setFormData] = useState(INITIAL_STATE);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(formData => ({
+      ...formData,
       [name]: value
-    }));
+    }))
+    console.log("FORM DATA", formData);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addBox({ ...formData });
   };
 
   return (
-    <form id="NewBoxForm">
+    <form id="NewBoxForm" onSubmit={handleSubmit}>
       <label htmlFor="height">Height:</label>
       <input
         id="height"
