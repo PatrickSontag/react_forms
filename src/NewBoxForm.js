@@ -40,6 +40,7 @@ function NewBoxForm() {
         value={formData.color}
         onChange={handleChange}
       />
+      <button>Box</button>
     </form>
   );
 }
