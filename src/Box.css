@@ -1,3 +1,10 @@
-/* .Box {
-    
-} */
+.Box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box {
+    border-radius: 2em;
+    margin: .5em;
+}

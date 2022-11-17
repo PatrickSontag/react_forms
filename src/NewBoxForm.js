@@ -28,28 +28,34 @@ function NewBoxForm({ addBox }) {
 
   return (
     <form id="NewBoxForm" onSubmit={handleSubmit}>
-      <label htmlFor="height">Height:</label>
-      <input
-        id="height"
-        name="height"
-        value={formData.height}
-        onChange={handleChange}
-      />
-      <label htmlFor="width">Width:</label>
-      <input
-        id="width"
-        name="width"
-        value={formData.width}
-        onChange={handleChange}
-      />
-      <label htmlFor="color">Color:</label>
-      <input
-        id="color"
-        name="color"
-        value={formData.color}
-        onChange={handleChange}
-      />
-      <button>New Box</button>
+      <div className="form-line">
+        <label htmlFor="height">Height:</label>
+        <input
+          id="height"
+          name="height"
+          value={formData.height}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-line">
+        <label htmlFor="width">Width:</label>
+        <input
+          id="width"
+          name="width"
+          value={formData.width}
+          onChange={handleChange}
+        /> 
+      </div>
+      <div className="form-line">
+        <label htmlFor="color">Color:</label>
+        <input
+          id="color"
+          name="color"
+          value={formData.color}
+          onChange={handleChange}
+        />
+      </div>
+      <button className="form-button">New Box</button>
     </form>
   );
 }
