@@ -1,7 +1,7 @@
 import './Box.css';
 
 function Box(props) {
-  const { boxHeight, boxWidth, boxColor, removeBox } = props;
+  const { boxHeight, boxWidth, boxColor, removeBox, id } = props;
   return (
     <div className="Box" style={{
       // height: "200px",
@@ -11,7 +11,7 @@ function Box(props) {
       width: boxWidth,
       backgroundColor: boxColor
       }}>
-      <button onClick={removeBox}>X</button>
+      <button onClick={() => removeBox(id)}>X</button>
     </div>
   );
 }

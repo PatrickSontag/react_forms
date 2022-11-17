@@ -29,30 +29,18 @@ function BoxList() {
         <div>
         {boxes.map(({ id, height, width, color }) => 
             <Box 
-                id={id} boxHeight={height} 
+                id={id} 
+                boxHeight={height} 
                 boxWidth={width} 
                 boxColor={color} 
                 key={id} 
                 removeBox={removeBox}/>)}
         </div>
-        <button onClick={boxInfo}>Box List Info</button>
+        <button onClick={boxInfo}>Log Box List</button>
         <div onClick={console.log("div boxes", boxes)}></div>
 
     </div>
     )
-
-    const [ state, setState ] = useState(null);
-    console.log(state);
-    return (
-        <div className="BoxList">
-            <NewBoxForm />
-            <Box 
-                boxHeight="100px" 
-                boxWidth="200px" 
-                boxColor="red" 
-                />
-        </div>
-    );
 }
 
 export default BoxList;
