@@ -22,6 +22,7 @@ function NewBoxForm({ addBox }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     addBox({ ...formData });
+    // addBox(formData.height, formData.width, formData.color);
     setFormData(INITIAL_STATE);
   };
 
@@ -48,7 +49,7 @@ function NewBoxForm({ addBox }) {
         value={formData.color}
         onChange={handleChange}
       />
-      <button>Box</button>
+      <button>New Box</button>
     </form>
   );
 }
