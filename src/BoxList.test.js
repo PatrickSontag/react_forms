@@ -34,9 +34,9 @@ it("can add a new box", function() {
     const removeButton = boxList.getByText("X");
     expect(removeButton).toBeInTheDocument();
     expect(removeButton.previousSibling).toHaveStyle(`
-        width: 2em;
         height: 2em;
-        color: peachpuff;
+        width: 2em;
+        background-color: peachpuff;
     `);
     // expect form to be empty
     expect(boxList.getAllByDisplayValue("")).toHaveLength(3);
@@ -47,7 +47,7 @@ it("can add a new box", function() {
     const boxList = render(<BoxList />);
     addTestBox(boxList);
   
-    const removeButton = boxList.getByText("Remove The Box!");
+    const removeButton = boxList.getByText("X");
   
     // click the remove button and the box should be gone
     fireEvent.click(removeButton);

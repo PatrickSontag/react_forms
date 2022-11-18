@@ -7,8 +7,8 @@ function Box(props) {
       <div 
         className="box" 
         style={{
-          height: boxHeight,
-          width: boxWidth,
+          height: `${boxHeight}em`,
+          width: `${boxWidth}em`,
           backgroundColor: boxColor
         }}>
       </div>
