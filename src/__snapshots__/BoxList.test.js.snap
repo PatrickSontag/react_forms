@@ -57,30 +57,7 @@ exports[`matches snapshot 1`] = `
         New Box
       </button>
     </form>
-    <div>
-      <div
-        class="Box"
-      >
-        <div
-          class="box"
-          style="height: 10em; width: 10em; background-color: orange;"
-        />
-        <button>
-          X
-        </button>
-      </div>
-      <div
-        class="Box"
-      >
-        <div
-          class="box"
-          style="height: 5em; width: 20em; background-color: teal;"
-        />
-        <button>
-          X
-        </button>
-      </div>
-    </div>
+    <div />
     <div />
   </div>
 </DocumentFragment>

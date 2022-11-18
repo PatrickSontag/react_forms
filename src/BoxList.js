@@ -7,8 +7,8 @@ import NewBoxForm from './NewBoxForm';
 function BoxList() {
 
     const INITIAL_STATE = [
-        { id: uuid(), height: '10em', width: "10em", color: "orange" },
-        { id: uuid(), height: '5em', width: "20em", color: "teal" }
+        // { id: uuid(), height: '10em', width: "10em", color: "orange" },
+        // { id: uuid(), height: '5em', width: "20em", color: "teal" }
       ]
     const [boxes, setBoxes] = useState(INITIAL_STATE);
     const addBox = (newBox) => {
